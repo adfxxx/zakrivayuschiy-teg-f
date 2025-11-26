@@ -34,7 +34,7 @@
 .main__title,
 .main__subtitle {
   font-family: var(--accent-font);
-  font-weight: 400;
+  font-variation-settings: --wght 400;
   text-align: center;
   text-transform: uppercase;
 }
@@ -242,7 +242,7 @@
 .button__text {
   font-family: var(--accent-font);
   font-size: 14px;
-  font-weight: 400;
+  font-variation-settings: --wght 400;
 }
 
 .save__button {
@@ -298,7 +298,7 @@
 
 .dialog__title {
   font-family: var(--accent-font);
-  font-weight: 400;
+  font-variation-settings: --wght 400;
   font-size: 14px;
   line-height: 1.5;
   text-transform: uppercase;
