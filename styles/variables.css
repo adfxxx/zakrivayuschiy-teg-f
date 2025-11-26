@@ -1,6 +1,10 @@
 :root {
-  --main-font: 'Inter-Variable';
-  --accent-font: 'PressStart2P';
-  --content-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.7500rem);
+  --main-font: "Inter-Variable";
+  --accent-font: "PressStart2P";
+  --border: 2px solid #000000;
+  --content-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   --text-stroke-color: rgb(256 256 256/0.5);
+  --contour-color: #000;
+  --animation_hover_color: #000;
+  --animation-fill-color: #ff0000;
 }
