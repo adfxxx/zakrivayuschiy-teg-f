@@ -233,16 +233,16 @@
   padding-right: 35px;
 }
 
-.card__like-button__text {
-  font-family: var(--accent-font);
-  font-size: 14px;
-  line-height: 90%;
-}
-
 .button__text {
   font-family: var(--accent-font);
   font-size: 14px;
   font-variation-settings: --wght 400;
+}
+
+.card__like-button.button__text{
+  font-family: var(--accent-font);
+  font-size: 14px;
+  line-height: 90%;
 }
 
 .save__button {
