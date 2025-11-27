@@ -1,6 +1,8 @@
 :root {
   --main-font: "Inter-Variable";
   --accent-font: "PressStart2P";
+  --font-size-header-title: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --font-size-header-subtitle: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   --border: 2px solid #000000;
   --content-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   --text-stroke-color: rgb(256 256 256/0.5);

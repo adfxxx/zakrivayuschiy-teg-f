@@ -1,4 +1,5 @@
 .page {
+  overflow-x: hidden;
   background-image: repeating-linear-gradient(
       to bottom,
       #d3d3d3 0,
@@ -34,23 +35,24 @@
 .main__title {
   padding-bottom: 20px;
   font-family: var(--accent-font);
-  font-size: 49px;
+  font-size: var(--font-size-header-title);
   text-align: center;
   text-transform: uppercase;
-  font-variation-settings: wght 400;
+  font-variation-settings: "wght" 400;
 }
 
 .main__subtitle {
   font-family: var(--accent-font);
-  font-size: 14px;
+  font-size: var(--font-size-header-subtitle);
   text-align: center;
   text-transform: uppercase;
-  font-variation-settings: wght 400;
+  font-variation-settings: "wght" 400;
 }
 
 .card {
   display: block;
   box-sizing: border-box;
+  max-width: var(--content-width);
   margin-bottom: 50px;
   border: var(--border);
   background-color: #ffffff;
@@ -118,28 +120,27 @@
   }
 }
 
-.card__title,
-.card__text {
-  display: block;
-  font-family: var(--main-font);
-  font-size: 18px;
-}
-
 .card__title {
+  display: block;
   margin-top: 4px;
   margin-bottom: 4px;
   padding-right: 10px;
   padding-left: 10px;
+  font-family: var(--main-font);
+  font-size: 18px;
   line-height: 1.22;
-  font-variation-settings: wght 715;
+  font-variation-settings: "wght" 715;
 }
 
 .card__text {
+  display: block;
   margin-top: 25px;
   margin-right: 25px;
   margin-bottom: 25px;
   margin-left: 25px;
-  font-variation-settings: wght 410;
+  font-family: var(--main-font);
+  font-size: 18px;
+  font-variation-settings: "wght" 410;
 }
 
 .contour {
@@ -207,7 +208,7 @@
 .button__text {
   font-family: var(--accent-font);
   font-size: 14px;
-  font-variation-settings: wght 400;
+  font-variation-settings: "wght" 400;
 }
 
 .card__like-button.button__text {
@@ -228,29 +229,35 @@
 .card__buttons {
   display: flex;
   justify-content: flex-end;
-  gap: 1px;
+  gap: 6px;
   margin-bottom: 24px;
-  padding-right: 25px;
-}
-
-.card__icon-button,
-.card__like-button {
-  background-color: transparent;
+  padding-right: 26px;
 }
 
 .card__icon-button {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 38px;
+  height: 38px;
   border: 2px solid transparent;
+  padding: 0;
   padding-top: 0;
+  background-color: transparent;
   transition: border 0.3s ease;
+}
+
+.card__icon-button svg {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
 }
 
 .card__like-button {
   width: 130px;
   padding-top: 6px;
   text-align: center;
+  background-color: transparent;
 }
 
 .save__button {
@@ -305,7 +312,7 @@
   font-size: 14px;
   line-height: 1.5;
   text-transform: uppercase;
-  font-variation-settings: wght 400;
+  font-variation-settings: "wght" 400;
 }
 
 .button:focus {
@@ -342,14 +349,6 @@
 }
 
 @media (width > 375px) {
-  .main__title {
-    font-size: 65px;
-  }
-
-  .main__subtitle {
-    font-size: 23px;
-  }
-
   .header {
     margin-top: 98px;
     margin-bottom: 96px;
