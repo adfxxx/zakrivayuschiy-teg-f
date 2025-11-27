@@ -1,1 +1,0 @@
-https://github.com/adfxxx/zakrivayuschiy-teg-f
